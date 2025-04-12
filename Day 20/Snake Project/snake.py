@@ -33,6 +33,13 @@ class Snake:
     def extend(self):
         self.add_segment(self.snake_body[-1].position())
 
+    def reset(self):
+        for segments in self.snake_body:
+            segments.goto(1000, 1000)
+        self.snake_body.clear()
+        self.spawn_in()
+        self.head = self.snake_body[0]
+
 
     def movement(self):
         for seg_num in range(len(self.snake_body) - 1, 0, -1):
