@@ -24,7 +24,7 @@ class Paddle(Turtle):
 
 
     def ball_spawn(self):
-        ball = Turtle('square')
+        ball = Turtle('circle')
         ball.color('white')
         ball.shapesize(.5, .5)
         ball.pu()

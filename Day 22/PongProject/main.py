@@ -26,7 +26,7 @@ while game_is_on:
     if y_cor < -390 or y_cor > 390:
         paddle.ball.setheading((heading + 90) % 360)
     if paddle.ball.distance(x=paddle.player) < 30:
-        paddle.ball.setheading((heading + 180+ randint(-5, 5)) % 360)
+        paddle.ball.setheading((heading + 180 + randint(-5, 5)) % 360)
         paddle.ball.fd(20)
     if paddle.ball.distance(x=paddle.cpu) < 30:
         paddle.ball.setheading((heading + 180 + randint(-5, 5)) % 360)
